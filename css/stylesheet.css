@@ -1,0 +1,283 @@
+
+@font-face {
+    font-family: GTAmerica-ExtendedMedium;
+    src: url("./../assets/fonts/GT-America-Extended-Medium.woff");
+}
+@font-face {
+    font-family: GTAmerica-Light;
+    src: url("./../assets/fonts/GT-America-Standard-Light.woff");
+}
+body{
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   background: #d8e4ed  url('./../assets/Grid.png');
+}
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: rgba(255,255,255, .2);
+    height: 115px;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.14);
+}
+header nav{
+    display: flex;
+    margin: 40px 0;
+    justify-content: space-between;
+}
+header nav .logo {
+    max-width: 300px;
+    max-height: 100%;
+    position: relative;
+    top: -80px;
+    left: -35px;
+}
+header nav .items{
+    margin-top: 25px;
+}
+.menu{
+    display: flex;
+}
+header a{
+  text-decoration: none;
+  width: 60.29px;
+  height: 19px;
+  font-family: "GTAmerica-ExtendedMedium";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #000;
+}
+header ul li {
+    list-style: none;
+    padding: 0 15px;
+    margin: 0 15px;
+}
+.burger{
+    margin : 10px;
+    display: none;
+    cursor: pointer;
+    margin-right: 25px;
+}
+.home{
+    width :100%;
+    height: 100vh;
+    overflow: hidden;
+    background: rgba(48,255,147,0.2);
+    margin-top: 115px;
+}
+.home .container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.home .content img{
+    width: 100%;
+    max-width: 555.77px;
+    max-height: 533.22px;
+}
+ .overlay{
+     z-index: 1;
+     margin: auto;
+ }
+ .overlay .title{
+    z-index: 3;
+    width: 624px;
+    height: 43px;
+    font-family: "GTAmerica-ExtendedMedium";
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 43px;
+ }
+ .overlay .subtitleOne{
+    z-index: 3;
+    width: 371px;
+    height: 88px;
+    font-family: "GTAmerica-Light";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 40px;
+ }
+ .overlay .subtitleTwo{
+    z-index: 3;
+    width: 372px;
+    height: 42px;
+    font-family: "GTAmerica-Light";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 40px 0;
+}
+.lifestyle{
+    width: 100%;
+    height: 100%;
+}
+.lifestyle img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.guide{
+    width: 100%;
+}
+.guide .containerr{
+    background: url('./../assets/Rectangle.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 700px;
+}
+.guide .containerr .title{
+    font-size: 44px;
+    font-family: "GTAmerica-ExtendedMedium";
+    padding-top: 150px;
+    padding-left: 150px;
+}
+.guide .containerr .subtitle{
+    font-size: 28px;
+    font-family: "GTAmerica-Light";
+   margin-top: 15px;
+   margin-left: 150px;
+}
+.guide .wrapper{
+    position: relative;
+    top: -300px;
+    margin: 0 150px;
+    z-index: 1;
+}
+.guide .wrapper img{
+    width: 90%;
+    margin: 50px;
+}
+.guide .wrapper:after{
+    content: "";
+    display: block;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background: rgba(48,255,147,0.2);
+}
+.grid{
+    transform: translateY(-275px);
+}
+.grid .container{
+    margin: 0;
+}
+.grid img{
+    width: 100%;
+    height: 100%;
+}
+.grid .row1:after{
+    content: "";
+    display: block;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background: rgba(48,255,147,0.2);
+}
+.grid .row{
+    /* background: rgba(48,255,147,0.2); */
+}
+.grid .row2{
+  margin-top: 50px;
+  padding: 50px;
+}
+.press{
+    width: 100%;
+    height: 300px;
+    background: #D8E4ED;
+}
+.press .wrapper{
+    height:275px;
+}
+.press .title{
+    padding-top: 100px;
+    font-family: "GTAmerica-ExtendedMedium";
+    padding-left: 100px;
+    font-size: 33px;
+}
+.press .subtitle{
+    padding-left: 100px;
+    font-family: "GTAmerica-Light";
+    font-size: 22px;
+}
+.press .corousel{
+   display:flex;
+   justify-content: center;
+}
+
+.press .corousel .oval{
+    width: 8px;
+    height: 8px;
+    background: #676464;
+    border-radius: 4px ;
+    margin: 2px;
+    cursor: pointer;
+}
+
+
+footer .footer__container{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background: #000;
+    justify-content: space-between;
+    align-items:center;
+}
+footer .footer__container .row{
+   font-size: 14px;
+   margin: 0 20px;
+   color: #f5f4e4;
+   font-family: "GTAmerica-Light";
+   font-weight: 400;
+   line-height: 19px;
+}
+.footer__container .row .col2{
+    margin-right: 80px;
+ }
+@media (max-width: 992px) {
+    .guide .wrapper{
+        margin: 0 50px;
+    }
+    .items{
+      display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .home .content{
+       margin-top: 25px;
+    }
+    .home .content img{
+       width: 90%;
+       height: 500px;
+     }
+}
+@media (max-width: 768px) {
+    .overlay .title{
+        font-size: 32px;
+    }
+    .overlay .subtitleOne{
+        font-size: 20px;
+    }
+    .overlay .subtitleTwo{
+       font-size: 18px;
+   }
+   .guide .containerr .title{
+    padding-left: 50px;
+   }
+   .guide .containerr .subtitle{
+    margin-left: 50px;
+   }
+}
